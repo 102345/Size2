@@ -1,0 +1,134 @@
+﻿@model IEnumerable<Size.ContaDigital.Presentation.ViewModels.MovimentoContaViewModel>
+@{
+    ViewData["Title"] = "Extrato da Cota Digital";
+}
+<h2>Extrato da Conta Digital</h2>
+
+<div class="container">
+
+    <div class="row">
+        <!---<div class="col-xs-12"> -->
+        <div class="col-xs-2">
+            Nome&nbsp;&nbsp;
+        </div>
+        <div class="col-xs-2">
+            @ViewData["Titular"]&nbsp;&nbsp;
+        </div>
+        <div class="col-xs-2">
+            Agência&nbsp;&nbsp;
+        </div>
+        <div class="col-xs-2">
+            @ViewData["Agencia"]&nbsp;&nbsp;
+        </div>
+        <div class="col-xs-2">
+            Conta Corrente&nbsp;&nbsp;
+        </div>
+        <div class="col-xs-2">
+            @ViewData["ContaCorrente"]
+        </div>
+        <!--</div>-->
+    </div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2">
+            @*@Html.ActionLink("Depositar", "Deposita", "ContaDigital")*@
+             <a href="/ContaDigital/Deposita" class="btn btn-primary"><i class="icon-user icon-white"></i>Deposito</a>
+        </div>
+        <div class="col-xs-2">
+            &nbsp;&nbsp;
+        </div>
+        <div class="col-xs-2">
+            @*@Html.ActionLink("Sacar", "Saca", "ContaDigital")*@
+            <a href="/ContaDigital/Saca" class="btn btn-primary"><i class="icon-user icon-white"></i>Saque</a>
+        </div>
+        <div class="col-xs-2">
+            &nbsp;&nbsp;
+        </div>
+        <div class="col-xs-2">
+            @*@Html.ActionLink("Transferir", "Transfere", "ContaDigital")*@
+            <a href="/ContaDigital/Transfere" class="btn btn-primary"><i class="icon-user icon-white"></i>Transferência</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-xs-12">
+
+   
+
+    <div>
+
+        <table id="tblExtratoConta" class="table table-striped table-hover">
+
+
+            <thead>
+                <tr>
+
+                    <th>@Html.DisplayNameFor(model => model.TipoMovimento)</th>
+                    <th>@Html.DisplayNameFor(model => model.Valor)</th>
+                    <th>@Html.DisplayNameFor(model => model.DataMovimento)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @if (Model.Count() > 0)
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>@Html.DisplayFor(modelItem => item.TipoMovimento)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Valor)</td>
+                            <td>@Html.DisplayFor(modelItem => item.DataMovimento)</td>
+
+                        </tr>
+
+
+                    }
+
+
+                }
+
+
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <!---<div class="col-xs-12"> -->
+        <div class="col-xs-2">
+           <b>Saldo</b>&nbsp;
+        </div>
+        <div class="col-xs-2">
+           <b>@ViewData["Saldo"]</b>&nbsp;
+        </div>
+        <div class="col-xs-2">
+            &nbsp;
+        </div>
+        <div class="col-xs-2">
+            &nbsp;
+        </div>
+        <div class="col-xs-2">
+           &nbsp;
+        </div>
+        <div class="col-xs-2">
+           &nbsp;
+        </div>
+        <!--</div>-->
+    </div>
+
+</div>
+
+
+

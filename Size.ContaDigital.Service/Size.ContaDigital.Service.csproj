@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Size.ContaDigital.DAL\Size.ContaDigital.DAL.csproj" />
+    <ProjectReference Include="..\Size.ContaDigital.Model\Size.ContaDigital.Model.csproj" />
+  </ItemGroup>
+
+</Project>
