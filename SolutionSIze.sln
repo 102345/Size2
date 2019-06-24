@@ -18,7 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{F3AAD120-6743-4881-86A9-F1415D131750}"
 	ProjectSection(SolutionItems) = preProject
 		Database\Create_Database.sql = Database\Create_Database.sql
-		Database\Create_Tables..sql = Database\Create_Tables..sql
+		Database\Create_Tables.sql = Database\Create_Tables.sql
 		Database\PopularBase.sql = Database\PopularBase.sql
 	EndProjectSection
 EndProject
