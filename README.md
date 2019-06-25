@@ -1,6 +1,6 @@
 # Size - Simulação de Conta Digital
 Projeto exemplo em ASP.NET Core MVC com DDD, AutoMapper , ORM Entity Framework. e com consumo de métodos de serviços em WEB API MVC Core Rest
-com autentiação via JWT
+com autentiacação via JWT
 
 # Para Testar funcionamento do projeto , siga os seguintes passos:
 
