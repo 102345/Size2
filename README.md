@@ -20,4 +20,7 @@ e ServiceConnection para o endereço local do SGDB Sql Server.
 
 6. Em seguida rodar o projeto Size.ContaDigital.Presentation
 
+7. Para testar entre com usuario : TESTE e senha : TESTE.
+8. Para outra conta de usuário entre com usuário : TESTE2  e senha TESTE2.
+
 OBS: Para rodar os projetos desta solução, usar o Visual Studio 2017 ou versão superior.
