@@ -5,6 +5,7 @@ namespace Size.ContaDigital.Api
 {
     public class SigningConfigurations
     {
+        //teste
         public SecurityKey Key { get; }
         public SigningCredentials SigningCredentials { get; }
 
